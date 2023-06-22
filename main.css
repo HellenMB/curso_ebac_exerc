@@ -1,0 +1,125 @@
+* {
+    
+    box-sizing: border-box; /*alinnhando o site e pedindo ao navegador para respeitar o layout*/
+    margin: 0; /*altura da mergem*/
+    padding: 0; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+
+}
+
+body > header{ /*importante informar que é o primeiro header, pois temos 2 header no código*/
+    background-color: #3a0810; /*definindo cor do fundo do header*/
+    padding: 16px 0;
+    color: silver; /*cor da fonte*/
+}
+
+header .container{/*chamando a div container que criamos no header*/
+    display: flex; /*organizar os elementos na página*/
+    align-items: center; /*alinhas os itens*/
+    justify-content: space-between; /*espaçamento entre os itens*/
+}
+
+header li{/*chamdo o li que esta dentro do header*/
+    display:inline; /*configura a forma que o elemento será exibido*/ 
+    font-size: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 16px;
+
+}
+
+header li a{/*chamando o a que esta dentro do header*/
+    color: silver;
+}
+
+.container{/*chamando a classe container*/
+    width: 1366px;/*largura*/
+    margin: 0 auto 0 auto; /*centralizando usando a margem*/
+}
+
+.articles{/*chamando a plasse articles*/
+    display: flex;
+    flex-wrap: wrap; /*quebrar a linha*/
+    justify-content: space-between; /*espaçamento entre os itens*/
+}
+
+.articles article img{/*chamando a imagem que esta dentro do artile que esta na classe articles*/
+    /*height: 180px; *//*determina a altura da área do conteúdo*/
+    width: 100%;
+}
+
+.articles article{
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2,
+.articles article{
+    margin-bottom: 16px;/*define a área da margem inferior de um elemento*/
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: red;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none; /*removendo linha de baixo dos links*/
+    font-weight: bold; /*negrito*/
+    margin-top: 8px;
+}
+
+.articles article a:hover{ /*quando passar o mouse em cima*/
+    text-decoration: underline;
+
+}
+
+.articles article p, 
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#sports {
+    background-color: #a68c92;
+}
+
+#sports .articles article a {
+    background-color: #4f393f
+}
+
+#economy{
+    background-color: #be657f;
+}
+
+#economy .articles article a {
+    background-color: #72203e;
+}
+
+#entertainment{
+    background-color: #a9ffc7;
+}
+#entertainment .articles article a {
+    background-color: #005a2e;
+}
+
+#tecnology{
+    background-color: #efec93;
+}
+
+#tecnology .articles article a{
+    background-color: #c0be68;
+}
